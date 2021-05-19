@@ -1,6 +1,6 @@
 'use strict';
 
-var he = require('he');
+var she = require('./she');
 var lowercase = require('./lowercase');
 var attributes = require('./attributes');
 var elements = require('./elements');
@@ -107,7 +107,7 @@ function parser (html, handler) {
       if (doubleQuotedValue === void 0 && singleQuotedValue === void 0 && unquotedValue === void 0) {
         attrs[name] = void 0; // attribute is like <button disabled></button>
       } else {
-        attrs[name] = he.decode(doubleQuotedValue || singleQuotedValue || unquotedValue || '');
+        attrs[name] = she.decode(doubleQuotedValue || singleQuotedValue || unquotedValue || '');
       }
     }
   }

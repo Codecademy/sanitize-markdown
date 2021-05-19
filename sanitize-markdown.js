@@ -1,6 +1,6 @@
 'use strict';
 
-var he = require('he');
+var she = require('./she');
 var assign = require('assignment');
 var parser = require('./parser');
 var sanitizer = require('./sanitizer');

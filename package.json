@@ -13,15 +13,11 @@
   },
   "homepage": "https://github.com/JoshuaKGoldberg/sanitize-markdown",
   "main": "sanitize-markdown.js",
-  "browser": {
-    "he": "./she.js"
-  },
   "scripts": {
     "test": "tape test/**/*.js"
   },
   "dependencies": {
-    "assignment": "2.0.0",
-    "he": "0.5.0"
+    "assignment": "2.0.0"
   },
   "devDependencies": {
     "sinon": "1.17.5",
