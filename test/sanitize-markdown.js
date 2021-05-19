@@ -62,7 +62,7 @@ test('only returns tags in the allowlist even if disallowed tag is nested', func
 });
 
 test('allows blank attribute', function (t) {
-  t.equal(insane('<div class>foo</div>', { allowedTags: ['div'] }, true), '<div>foo</div>');
+  t.equal(sanitizeMarkdown('<div class>foo</div>', { allowedTags: ['div'] }, true), '<div>foo</div>');
   t.end();
 });
 
