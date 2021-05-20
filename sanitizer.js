@@ -1,6 +1,6 @@
 'use strict';
 
-var he = require('he');
+var she = require('./she');
 var lowercase = require('./lowercase');
 var attributes = require('./attributes');
 var elements = require('./elements');
@@ -60,7 +60,7 @@ function sanitizer (buffer, options) {
         out(key);
         if (typeof value === 'string') {
           out('="');
-          out(he.encode(value));
+          out(she.encode(value));
           out('"');
         }
       }
