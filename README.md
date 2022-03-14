@@ -13,7 +13,7 @@ Works well in browsers, as its footprint size is very small _(around **~2kb** gz
 ## Install
 
 ```shell
-npm install sanitize --save
+npm install sanitize-markdown --save
 ```
 
 ## Usage
